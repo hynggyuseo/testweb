@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Page</title>
+</head>
+<body>
+<h1>Edit Page</h1>
+<form action="/editList/<%= product[0].id  %>" method='post'>
+    <fieldset>
+        <legend>EDIT DATA</legend>
+        <table>
+            <tr>
+                <td><lable>Id</lable></td>
+                <td><input type="text" name="id" value="<%= product[0].id  %>" disable /></td>
+            </tr>
+            <tr>
+                <td><lable>Name</lable></td>
+                <td><input type="text" name="name" value="<%= product[0].name  %>" /></td>
+            </tr>
+            <tr>
+                <td><lable>TEXT</lable></td>
+                <td><input type="text" name="text" value="<%= product[0].text %>" /></td>
+            </tr>
+        </table>
+        <input type="submit" value="Update"/>
+    </fieldset>
+</form>
+</body>
+</html>
